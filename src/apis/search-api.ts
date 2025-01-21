@@ -1,6 +1,6 @@
 import api from "./base";
 
-export const searchApi = async (tenCongViec: string) => {
+export const searchApi = async (TenCongViec: string) => {
   try {
     const response = await api.get(
       `/cong-viec/lay-danh-sach-cong-viec-theo-ten/${TenCongViec}`
