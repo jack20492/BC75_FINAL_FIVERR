@@ -1,0 +1,182 @@
+.footerContainer {
+  height: 100%;
+
+  .navBar {
+    display: flex;
+    padding: 2vh 4vh;
+    justify-content: space-between;
+
+    .navBarLeft {
+      .fiverrLogo {
+        width: 100px;
+        height: auto;
+        margin-right: auto;
+      }
+    }
+
+    a {
+      margin-top: 10px;
+      color: #74767e;
+    }
+
+    p {
+      margin: 0 0 5px 0;
+      font-size: 0.85rem;
+      color: #b5b6ba;
+    }
+  }
+
+  .horizontalLine {
+    border: 1px solid rgb(141, 146, 151);
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: rgb(141, 146, 151);
+    text-transform: capitalize;
+    .footerLeft {
+      display: flex;
+      .footerText{
+        margin-left: 50px;
+        font-size: 0.9rem;
+      }
+    }
+    .footerRight {
+      display: flex;
+      .iconContact {
+        display: flex;
+        a {
+          padding-right: 30px;
+          i {
+            color: #74767e;
+            font-size: 18px;
+          }
+          i:hover {
+            background-color: #c7c7d1;
+            border-radius: 50%;
+            margin: -10px;
+            padding: 10px;
+            transition: background-color .2s;
+            text-decoration: none;
+          }
+        }
+      }
+      .iconPerson {
+        a {
+          i {
+            color: #74767e;
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 8px 11px;
+            margin: -8px -10px;
+          }
+
+          i:hover {
+            background-color: #c7c7d1;
+            border-radius: 50%;
+            transition: background-color .2s;
+            text-decoration: none;
+            border-color: #c7c7d1;
+            color: black;
+          }
+        }
+      }
+
+      .iconText {
+        display: flex;
+
+        a {
+          padding-right: 30px;
+
+          i {
+            color: #74767e;
+          }
+
+          i:hover {
+            background-color: #c7c7d1;
+            border-radius: 10px;
+            margin: -10px;
+            padding: 10px;
+            transition: background-color .2s;
+            text-decoration: none;
+          }
+        }
+
+        .iconPerson {
+          padding-right: 30px;
+
+          i {
+            color: #74767e;
+          }
+
+          i:hover {
+            background-color: #c7c7d1;
+            border-radius: 50%;
+            margin: -10px;
+            padding: 10px;
+            transition: background-color .2s;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .endLine {
+    border: 3px solid rgb(36, 38, 41);
+    margin-bottom: 20px;
+  }
+  :global {
+    .MuiLink-root {
+      text-decoration: none !important;
+      display: block !important;
+      
+      &:hover {
+        text-decoration: underline !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .item{
+    width:  20%;
+    display: block;
+   }
+}
+@media only screen and (max-width: 992px) {
+  .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .item{
+    width: 33%;
+    display: block;
+   }
+}
+@media only screen and (max-width: 768px) {
+  .item{
+    width: 50%;
+    display: block;
+   }
+}
+@media only screen and (max-width: 576px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}

@@ -1,0 +1,149 @@
+.headerContainer {
+    height: 60vh;
+    background-image: url("../../../assets/5.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .navBar {
+        display: flex;
+        padding: 2vh 0;
+        justify-content: space-between;
+
+        .navBarLeft {
+            .fiverrLogo {
+                width: 100px;
+                height: auto;
+                margin-right: auto;
+            }
+        }
+
+        .navBarRight {
+            display: flex;
+            justify-content: space-around;
+
+            > * {
+                margin: 0 0.4vw;
+                font-weight: bold;
+                font-size: 1vw;
+                text-transform: none;
+                color: white;
+            }
+
+            :last-child {
+                padding: 0 1.5vw;
+            }
+        }
+    }
+
+    .mainHeader {
+        display: flex;
+
+        .mainHeaderLeft {
+            flex-direction: column;
+
+            > * {
+                margin: 3vh 0;
+            }
+            .searchBar {
+                display: flex;
+                height: 4.5vh;
+
+                .searchInput {
+                    border-radius: 5px 0 0 5px;
+                    background-color: white;
+                }
+
+                .searchButton {
+                    padding: 0 2vw;
+                    font-weight: bold;
+                    text-transform: none;
+                    background-color: #1dbf73;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+
+            .popularTag {
+                color: white;
+                margin-top: 0.5vh;
+                display: flex;
+                align-items: center;
+
+                .tagButton {
+                    padding: 0.2vw 0.4vw;
+                    text-transform: none;
+                    font-size: 0.8vw;
+                    font-weight: bolder;
+                    margin: 0 0.4vw;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .mainHeaderRight {
+            width: 90%;
+        }
+    }
+
+    .reviewInfo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 5vh;
+        margin-right: 14vw;
+    }
+}
+
+.trustedBy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 1vh 0;
+    > * {
+        margin: 0 1vw;
+        > * {
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+
+  }
+  @media only screen and (max-width: 768px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        .navBarRight{
+            Button{
+            font-size: 15px !important;
+        }
+      }
+    }
+    .mainHeaderLeft{
+        .slogan h3 {
+            font-size: 30px !important;
+        }
+    }
+    
+    }
+  @media only screen and (max-width: 576px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        .navBarRight{
+            display: flex;
+            flex-direction: column;
+            Button{
+            font-size: 10px !important;
+            
+        }
+      }
+    }
+    .mainHeaderLeft{
+        .slogan h3 {
+            font-size: 20px !important;
+            width: 100%;
+        }
+    }
+  } 

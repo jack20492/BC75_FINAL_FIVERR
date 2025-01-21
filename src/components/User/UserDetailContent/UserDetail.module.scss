@@ -1,0 +1,317 @@
+.contentContainer {
+  background-color: #f5f5fc;
+  padding-top: 5vh;
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .contentLeft {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+
+      .infoAbove {
+        position: relative;
+        border: 1px solid #c7c7d1;
+        padding: 3%;
+        text-align: center;
+        margin-bottom: 3vh;
+        background-color: white;
+        border-radius: 8px; // Thêm bo tròn góc
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+
+        .status {
+          right: 0;
+          position: absolute;
+          top: 2vh;
+          display: flex;
+          border: 1px solid orange;
+          border-radius: 4px;
+          margin-right: 1vh;
+          font-size: 13px;
+
+          .text {
+            margin: 3px;
+            color: orange;
+          }
+        }
+
+        .logo {
+          padding: 2vh 0;
+          margin: 0 12vh;
+          margin-top: 2vh;
+          background-color: #ffa500; // Đổi màu nền
+          border-radius: 50%;
+          font-size: 8vh;
+          color: white;
+        }
+
+        .name {
+          margin-top: 30px;
+          font-size: 24px; // Tăng kích thước chữ
+          font-weight: bold; // Đậm chữ
+        }
+
+        .edit::after {
+          content: "";
+          width: 90%;
+          position: absolute;
+          top: 25vh;
+          left: 5%;
+          height: 2px;
+          border-bottom: solid #c7c7d1 1px;
+        }
+
+        .from,
+        .memberSince {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          margin-top: 20px;
+        }
+      }
+
+      .infoBelow {
+        border: 1px solid #c7c7d1;
+        padding: 3%;
+        background-color: white;
+        border-radius: 8px; // Thêm bo tròn góc
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+
+        .linked,
+        .eng {
+          font-size: 13px;
+        }
+        .basic {
+          color: #c7c7d1;
+        }
+        .placehoder {
+          font-size: 13px;
+          margin-top: 0 !important;
+        }
+        .linked {
+          .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 2vh;
+            position: relative;
+          }
+          .title::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: -20px;
+            left: 0;
+            height: 2px;
+            border-bottom: solid #c7c7d1 1px;
+          }
+        }
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          align-items: center;
+          margin-top: 4vh;
+          .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0;
+          }
+          .title::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: -20px;
+            left: 0;
+            height: 2px;
+            border-bottom: solid #c7c7d1 1px;
+          }
+
+          .addNow {
+            font-size: 13px;
+            color: #1dbf73; // Đổi màu chữ
+            cursor: pointer; // Thêm con trỏ chuột
+            transition: color 0.3s; // Thêm hiệu ứng chuyển màu
+
+            &:hover {
+              color: #17a673; // Đổi màu khi hover
+            }
+          }
+        }
+      }
+    }
+
+    .contentRight {
+      width: 70%;
+      margin-left: 10vh;
+      display: flex;
+      flex-direction: column;
+
+      .buyServices {
+        display: flex;
+        border: solid #c7c7d1 1px;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 3vh;
+        background-color: white;
+        flex-wrap: wrap;
+        border-radius: 8px; // Thêm bo tròn góc
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+
+        .icon {
+          margin-right: 20px;
+        }
+
+        .text {
+          .buy {
+            .tellUs {
+              display: flex;
+              align-items: center;
+              color: #1dbf73; // Đổi màu chữ
+              cursor: pointer; // Thêm con trỏ chuột
+              transition: color 0.3s; // Thêm hiệu ứng chuyển màu
+
+              &:hover {
+                color: #17a673; // Đổi màu khi hover
+              }
+            }
+            .boldText {
+              font-weight: bold;
+            }
+
+            .close {
+              position: absolute;
+              right: 0;
+              top: 0;
+              cursor: pointer; // Thêm con trỏ chuột
+              transition: transform 0.3s; // Thêm hiệu ứng chuyển động
+
+              &:hover {
+                transform: rotate(90deg); // Xoay khi hover
+              }
+            }
+          }
+        }
+      }
+
+      .createGigs {
+        border: solid #c7c7d1 1px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3vh;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px; // Thêm bo tròn góc
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+
+        .buttonGig {
+          background-color: #1dbf73;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          cursor: pointer; // Thêm con trỏ chuột
+          transition: background-color 0.3s; // Thêm hiệu ứng chuyển màu
+
+          &:hover {
+            background-color: #17a673; // Đổi màu khi hover
+          }
+        }
+      }
+
+      .hiredJob {
+        border: none;
+        padding: 5px;
+        margin-bottom: 1vh;
+        background-color: white;
+        border-radius: 8px; // Thêm bo tròn góc
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+
+        .borderTop {
+          border-top: 1px solid #c7c7d1; // Đổi màu viền
+          padding: 10px; // Thêm padding
+          display: flex;
+          justify-content: space-between;
+          background-color: #f5f5fc;
+          border-radius: 8px; // Thêm bo tròn góc
+
+          .hiredRight {
+            margin-left: 3vh;
+
+            .title {
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+
+            .text {
+              font-size: 13px;
+            }
+
+            .buttons {
+              display: flex;
+              justify-content: flex-end;
+
+              .button {
+                margin-left: 20px;
+                border: 3px solid #1dbf73; // Đổi màu viền
+                margin-top: 15px;
+                padding: 6px;
+                box-shadow: 3px 3px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+                background-color: #1dbf73; // Đổi màu nền
+                color: white; // Đổi màu chữ
+                cursor: pointer; // Thêm con trỏ chuột
+                transition: background-color 0.3s; // Thêm hiệu ứng chuyển màu
+
+                &:hover {
+                  background-color: #17a673; // Đổi màu khi hover
+                }
+              }
+
+              .buttonDetail {
+                margin-left: 20px;
+                border: 3px solid #1dbf73; // Đổi màu viền
+                margin-top: 15px;
+                padding: 6px 30px;
+                box-shadow: 3px 3px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+                background-color: #1dbf73; // Đổi màu nền
+                color: white; // Đổi màu chữ
+                cursor: pointer; // Thêm con trỏ chuột
+                transition: background-color 0.3s; // Thêm hiệu ứng chuyển màu
+
+                &:hover {
+                  background-color: #17a673; // Đổi màu khi hover
+                }
+              }
+            }
+          }
+
+          .hiredLeft img {
+            height: 150px;
+            width: 200px;
+            border-radius: 8px; // Thêm bo tròn góc
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Thêm bóng đổ
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .contentLeft {
+      width: 100%;
+    }
+    .contentRight {
+      .icon {
+        width: 20%;
+      }
+    }
+  }
+}

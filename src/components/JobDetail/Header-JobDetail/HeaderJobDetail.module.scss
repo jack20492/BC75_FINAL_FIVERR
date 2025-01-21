@@ -1,0 +1,164 @@
+.headerAbove {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .left {
+        display: flex;
+
+        .search {
+            display: flex;
+            justify-content: center;
+            border: 1px solid #c7c7d1;
+            border-radius: 7px;
+            margin-left: 2vw;
+
+            .inputSearch {
+                width: 20vw;
+            }
+
+            .buttonSearch {
+                color: white;
+                font-weight: bold;
+                background-color: orange;
+                font-size: 13px;
+                border-radius: 0px 5px 5px 0px;
+            }
+
+            .icon {
+                margin-top: 4px;
+                margin-right: 5px;
+                color: #c7c7d1;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .item {
+            margin-right: 1vw;
+            color: #8d8d97;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            padding: 10px 13px;
+            background-color: #c7c7d1;
+            border-radius: 50%;
+            display: inline;
+        }
+    }
+}
+
+.line {
+    border-top: 1px solid #c7c7d1;
+    margin-top: 1vh;
+
+}
+
+.headerBelow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    
+    display: inline-block;
+
+    .item {
+        color: #8d8d97;
+        position: relative;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+        cursor: pointer;
+
+        .new {
+            border: 1px solid blue;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: blue;
+            margin-left: 2px;
+
+        }
+    }
+    .item:hover .dropdowncontent {
+        display: block !important;
+    }
+    .dropdowncontent {
+        display: none;
+        /* Bắt đầu ẩn */
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        top: 100%;
+        left:0;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+          li {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ddd;
+            a {
+                color: black;
+                text-decoration: none;
+                display: block;
+              }
+          }
+    }
+
+
+    
+}
+.resultsContainer{
+    margin: 4vh 0;
+    .results{
+        margin-top: 4vh;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            
+            .button{
+                text-transform: capitalize;
+                color: rgb(27, 27, 27);
+                font-weight: 600;
+                border: #8d8d97 1px solid;
+                font-size: 0.8rem;
+                margin-right: 5px;
+                
+            }
+        }
+        .right{
+            display: flex;
+            .switch{
+                color: rgb(27, 27, 27);
+                font-size: 0.8rem;
+                font-weight: 600;
+    
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .headerAbove{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

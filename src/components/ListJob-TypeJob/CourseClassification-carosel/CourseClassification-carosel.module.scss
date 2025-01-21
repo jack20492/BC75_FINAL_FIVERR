@@ -1,0 +1,68 @@
+.carosel {
+    margin: 5vh 0;
+    .above {
+        color: white;
+        background-image: url(./../../../assets/5.png);
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1vh;
+        .title{
+            font-size: 27px;
+            margin-bottom: 1vh;
+        }
+        .text{
+            margin-bottom: 1vh;
+        }
+        .button{
+           border: 1px white solid; 
+           color: white;
+           text-transform: capitalize;
+           .icon{
+            margin-right: 5px;
+           }
+        }
+    }
+    .textMostPopular{
+        margin: 4vh 0 2vh 0;
+    }
+    .below{
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(211, 202, 202);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px  rgb(211, 202, 202) ;
+            margin-right: 2vh;
+            margin-top: 2vh;
+            width: 23%;
+            .logo{
+                width: 7vh;;
+            }
+            .text{
+                font-weight: 500;
+                margin: 0 10px;
+            }
+        }
+        
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .item{
+        margin-top: 2vh;
+        width: 39% !important;
+}}
+@media only screen and (max-width: 576px) {
+    .item{
+        margin-top: 2vh;
+        width: 100% !important;
+    }
+}

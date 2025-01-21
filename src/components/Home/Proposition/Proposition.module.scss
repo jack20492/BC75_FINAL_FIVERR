@@ -1,0 +1,79 @@
+.propositionContainer {
+  background-color: #f0fdf6;
+
+  .mainContainer{
+    padding-top: 7cap;
+    display: flex;
+    .leftContainer {
+      margin: 0 3vw 3vw 0;
+      width: 40%;
+      > * {
+        margin-bottom: 1.7vh;
+      }
+
+      .leftContentCheckpoint{
+        > * {
+          margin-bottom: 0.5vh;
+        }
+        .checkpointTitle{
+          display: flex;
+          align-items: center;
+          > * {
+            margin-right: 0.5vw;
+          }
+        }
+      }
+    }
+    .rightContainer {
+      margin-left: 5vw;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .video {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+
+        .videoThumbnail {
+          width: 100%;
+          height: auto;
+        }
+
+        .playButton {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.videoPopup {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@media only screen and (max-width: 768px) {
+  .mainContainer{
+    display: block;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    width: 100%;
+  }
+  .leftContainer{
+    width: 100%!important;
+    display: block;
+  }
+}

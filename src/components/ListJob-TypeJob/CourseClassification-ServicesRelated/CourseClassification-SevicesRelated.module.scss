@@ -1,0 +1,30 @@
+.footer{;
+    .servicesRelated{
+        margin-bottom: 5vh;
+        .title{
+            text-align: center;
+        }
+        .servicesAbove,.servicesBetween, .servicesBelow{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            .item{
+                padding: 8px 9px;
+                background-color: rgb(211, 202, 202);
+                border-radius: 15px;
+                font-size: 12px;
+                margin-right: 10px;
+                font-weight: bold;
+                display: block;
+                color: rgb(112, 92, 92);
+                margin-bottom: 2vh;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 992px) {
+    .servicesRelated{
+
+    }
+}

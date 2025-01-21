@@ -1,0 +1,30 @@
+.containerCard {
+    .flex {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            margin-top: 1.25rem;
+            color: #b5b6ba;
+        }
+
+        .img {
+            width: 100%;
+            margin-right: 20px;
+        }
+
+        .card {
+            width: 25%;
+            margin-right: 3vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 50% !important;
+        margin-bottom: 5vh;
+        align-items: center;
+    }
+}

@@ -1,0 +1,47 @@
+.containerContent{
+    // display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    .contentLeft{
+        width: 60%;
+        .buyers{
+            display: flex;
+            align-items:center;
+            justify-content: flex-start;
+            margin-top: 2vh;
+        }
+        .seller{
+            margin: 5vh 0;
+            .contentSeller{
+                display: flex;
+                align-items: center;
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+        
+    }
+    .contentRight{
+        width: 40%;
+        border: 1px solid #c7c7d1;
+        height: fit-content;
+        margin-top: 7vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .containerContent{
+        display: flex;
+        flex-direction: column;
+        .contentLeft{
+            width: 100%;
+        }
+        .contentRight{
+            width: 100%;
+            margin-top: 5vh;
+        }
+    }
+  }
+ 

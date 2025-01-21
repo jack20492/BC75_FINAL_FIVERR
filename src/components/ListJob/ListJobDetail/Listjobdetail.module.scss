@@ -1,0 +1,39 @@
+.listJobDetail{
+    display: flex!important;
+    justify-content: space-evenly;
+    margin-right: 1vw;
+    flex-wrap: wrap;
+    width: 100%;
+    .cardItem{
+        width: 23%;
+        margin-bottom: 2vh;
+        .img{
+            width: 100%;
+        }
+        .starting{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px ;
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 992px) {
+    
+    .cardItem {
+        width: 33% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cardItem {
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .cardItem {
+        width: 100%;
+    }
+  }

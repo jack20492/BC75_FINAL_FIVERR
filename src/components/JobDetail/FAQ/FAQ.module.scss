@@ -1,0 +1,111 @@
+.containerFAQ {
+    .questions {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 3vh 0;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #c7c7d1;
+        }
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: space-around;
+
+        .reviewsLeft {
+            .reviewsTitle {
+                display: flex;
+                align-items: center;
+            }
+
+            .reviewsItem {
+                display: flex;
+                align-items: center;
+                color: blueviolet;
+                font-weight: 500;
+
+                .line {
+                    border: #faaf00 solid 5px;
+                    width: 7vw;
+                    margin: 0vh 1vw;
+                    border-radius: 10px;
+                }
+
+                .line4S {
+                    position: relative;
+                    height: 10px;
+                    background-color: #dddde6;
+                    width: 7vw;
+                    margin: 0vh 1vw;
+                    border-radius: 10px;
+                }
+
+                .line4S::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 5%;
+                    background-color: orange;
+                    border-radius: 10px;
+                }
+
+            }
+
+            .reviewsItemHiden {
+                display: flex;
+                align-items: center;
+                color: #dddde6;
+                font-weight: 500;
+
+                .line3S {
+                    border: #dddde6 solid 5px;
+                    width: 7vw;
+                    margin: 0vh 1vw;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .reviewsRight {
+            .reviewsRightTitle {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .reviewsRightContent {
+                color: #a2a2ac;
+                .flex {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1vw;
+                    margin-top: 1vh;
+                    .item {
+                        display: flex;
+                        align-items: center;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+@media only screen and (max-width: 576px) {
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+  }

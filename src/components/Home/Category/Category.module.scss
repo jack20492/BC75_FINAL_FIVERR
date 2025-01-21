@@ -1,0 +1,185 @@
+.cateContainer {
+    .item {
+        margin: 20px 0;
+        position: relative;
+        
+        a {
+            color: #000;
+            text-align: center;
+            
+            ::after {
+                border-bottom: 2px solid #c5c6c9;
+                content: "";
+                padding: 0 0 8px;
+                position: absolute;
+                right: 31%;
+                top: 55px;
+                width: 60px;
+                transition: width 0.3s ease;
+            }
+
+            .icon {
+                img {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                   display: inline;
+                }
+            }
+
+            .decorationIcon {
+                width: 100px;
+                height: 10px;
+                color: #000;
+            }
+
+            .text {
+                margin-top: 10px;
+            }
+        }
+
+        :hover {
+            text-decoration: none !important;
+
+            ::after {
+                border-bottom: 3px #1dbf73 solid;
+                width: 90px;
+                left: calc(50% - 45px)
+            }
+        }
+    }
+
+    .categories {
+        margin: 50px 50px;
+        justify-content: center !important;
+    }
+
+    .slick-arrow {
+        display: block !important;
+    }
+
+    .itemCarousel {
+        display: flex !important;
+        justify-content: center;
+        margin: 0 3rem;
+        align-items: center;
+        text-align: start;
+
+        .itemRight {
+            line-height: 2rem;
+            height: auto;
+            margin: 0 3rem;
+
+            .author {
+                color: rgb(141, 146, 151);
+
+                .rooter {
+                    color: #000 !important;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .text {
+            font-size: 2.5em;
+            margin-right: 2rem;
+            font-family: "Edu TAS Beginner", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 3rem;
+        }
+    }
+
+
+    .endLine {
+        border: 1px solid rgb(141, 146, 151);
+        margin-bottom: 20px;
+    }
+
+    :global {
+        button.slick-arrow.slick-prev.slick-disabled {
+            opacity: 1;
+            cursor: pointer;
+
+        }
+
+        ;
+
+        button.slick-arrow.slick-next.slick-disabled {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        ;
+
+        button.slick-arrow.slick-prev,
+        button.slick-arrow.slick-next {
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid rgb(255, 252, 252);
+            border-radius: 50%;
+            background-color:  rgb(250, 250, 250);
+            box-shadow: 2px 2px rgb(112, 106, 106);
+            // background-color: white;
+        }
+        button.slick-arrow.slick-prev::after,button.slick-arrow.slick-next::after{
+            box-sizing: border-box;
+            position: absolute;
+            top: 13.3422913719943423px;
+            inset-inline-start: 2.3422913719943423px;
+            display: inline-block;
+            width: 11.315417256011315px;
+            height: 11.315417256011315px;
+            border: 0 solid currentcolor;
+            border-inline-width: 2px 0;
+            border-block-width: 2px 0;
+            border-radius: 1px;
+            content: "";
+        }
+        
+            .css-1xylxj1-MuiTypography-root-MuiLink-root{
+              text-decoration: none !important;
+              display: block !important;
+            } 
+            .css-1xylxj1-MuiTypography-root-MuiLink-root:hover{
+              text-decoration: underline !important;
+              cursor: pointer;
+            }
+            .slick-arrow {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                
+                z-index: 1;
+            } 
+            ._cateContainer_1sbm6_1 button.slick-arrow.slick-prev, ._cateContainer_1sbm6_1 button.slick-arrow.slick-next {
+                background-color: rgb(24, 25, 26);
+                box-shadow: 2px 2px;
+                padding: 5px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(24, 25, 26);
+                border-image: initial;
+                border-radius: 50%;
+            }
+            .ant-carousel .slick-next, .ant-carousel .slick-prev{
+                color: #000000;
+                
+            }
+            
+    }
+
+
+}
+@media only screen and (max-width: 768px) {
+    .itemCarousel {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        align-items: center;
+        text-align: start;
+    }
+
+} 

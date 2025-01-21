@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+    .link {
+        width: 100%;
+        max-width: 100%;
+        min-width: 10vw;
+        font-weight: bold;
+        color: black;
+        
+    }
+    .flexColumn{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nameDetails{
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-top: 10px;
+        color: rgb(92, 95, 97);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .flex{
+        flex-direction: column !important;
+        width: 50vw!important;
+        .flexColumn{
+        flex-direction:row !important;
+        
+    }
+    
+}
+  }
+ 

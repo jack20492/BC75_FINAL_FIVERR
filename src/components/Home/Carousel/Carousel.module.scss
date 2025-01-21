@@ -1,0 +1,51 @@
+.carouselContainer {
+  margin  : 5vh 0 7vh 0;
+  .imageContainer {
+    position: relative;
+
+    :global {
+      .slick-list {
+        margin: 0 0.8vw;
+      }
+
+      .slick-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-top: 2px solid #000;
+          border-right: 2px solid #000;
+        }
+
+        &.slick-prev {
+          opacity: 1;
+          left: 0;
+          &::after {
+            transform: translate(-30%, -40%) rotate(-136deg);
+          }
+        }
+
+        &.slick-next {
+          opacity: 1;
+          right: 0;
+          &::after {
+            transform: translate(-60%, -40%) rotate(44deg);
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+}
